@@ -56,7 +56,10 @@
       <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden " style="background-color: #805759 !important;">
         <div class="my-3 p-3">
           <h2 class="display-5">3. Track the progress</h2>
-          <p class="lead"><b>Each week</b> write a few words on how well you're doing. It will help you stick to the resolution.</p>
+          <p class="lead">
+            <b>Each week</b> write a few words on how well you're doing. It will help you stick to the resolution.
+            You can subscribe to get weekly reminders to track progress.
+          </p>
         </div>
       </div>
       <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-3 pb-md-3 px-md-5 text-center  overflow-hidden" style="background-color: #2980b9 !important;">
@@ -114,10 +117,12 @@
 
     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
 
-      <div class="col-md-8 p-lg-5 mx-auto my-5">
-        <h4 class="display-4 font-weight-normal" style="font-size: 2rem;">Got another resolution idea?</h4>
-          Please share it with us: <i></i><br/>
-          We will add your idea to the list above.
+      <div class="col-md-6 p-lg-5 mx-auto my-5">
+        <form id="reminder-form">
+          <h4 class="display-4 font-weight-normal" style="font-size: 2rem;">Get a weekly reminder to track your progress</h4>
+          <input type="email" class="form-control mt-3" placeholder="Your email address" />
+          <button class="btn btn-lg btn-primary mt-3" type="submit">Subscribe</button>
+        </form>
       </div>
 
       <div class="product-device box-shadow d-none d-md-block"></div>
@@ -145,7 +150,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <script src="assets/holder.min.js"></script>
-    <script src="assets/main.js"></script>
+    <script src="assets/main.js?1"></script>
 
     <script>
       Holder.addTheme('thumb', {

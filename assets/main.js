@@ -8,7 +8,9 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 
 $(document).ready(function() {
     $("#reminder-form").submit(function(event) {
+        $.post('http://ec2-3-16-26-254.us-east-2.compute.amazonaws.com', {email: $('#email').val()}, function () {
+            $('#success-subscribed').show();
+        });
         event.preventDefault();
-        console.log( "Handler for .submit() called.");
     });
 })
